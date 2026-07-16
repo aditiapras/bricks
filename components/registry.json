@@ -155,7 +155,7 @@
       "name": "layout-template",
       "type": "registry:item",
       "title": "Layout Template",
-      "description": "Complete layout template with sidebar, breadcrumb, and header components. Perfect starting point for admin dashboards and SaaS applications.",
+      "description": "Complete layout template with sidebar, breadcrumb, header components, and auth pages. Perfect starting point for admin dashboards and SaaS applications.",
       "files": [
         {
           "path": "layout.tsx",
@@ -206,6 +206,60 @@
           "path": "breadcrumb/index.ts",
           "type": "registry:file",
           "target": "~/components/breadcrumb/index.ts"
+        },
+        {
+          "path": "auth-pages/settings.tsx",
+          "type": "registry:file",
+          "target": "~/app/settings/page.tsx"
+        },
+        {
+          "path": "auth-pages/users.tsx",
+          "type": "registry:file",
+          "target": "~/app/users/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-page",
+      "type": "registry:item",
+      "title": "Settings Page",
+      "description": "A comprehensive account settings page with profile management, avatar upload, name update, password change, and theme switching. Features form validation and modal dialogs.",
+      "files": [
+        {
+          "path": "auth-pages/settings.tsx",
+          "type": "registry:file",
+          "target": "~/app/settings/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "users-page",
+      "type": "registry:item",
+      "title": "Users Management Page",
+      "description": "A complete user management page with data table, user creation, role editing, and ban/unban functionality. Includes search, filtering, and pagination.",
+      "files": [
+        {
+          "path": "auth-pages/users.tsx",
+          "type": "registry:file",
+          "target": "~/app/users/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-pages",
+      "type": "registry:item",
+      "title": "Auth Pages Bundle",
+      "description": "Bundle of authentication-related pages including settings and users management. Complete solution for user account management.",
+      "files": [
+        {
+          "path": "auth-pages/settings.tsx",
+          "type": "registry:file",
+          "target": "~/app/settings/page.tsx"
+        },
+        {
+          "path": "auth-pages/users.tsx",
+          "type": "registry:file",
+          "target": "~/app/users/page.tsx"
         }
       ]
     },
@@ -213,7 +267,7 @@
       "name": "ui-kit",
       "type": "registry:item",
       "title": "UI Kit Bundle",
-      "description": "Complete UI kit bundle with all components: sidebar, breadcrumb, data-table, and layout template. Everything you need to build a modern admin dashboard.",
+      "description": "Complete UI kit bundle with all components: sidebar, breadcrumb, data-table, layout template, and auth pages. Everything you need to build a modern admin dashboard.",
       "files": [
         {
           "path": "layout.tsx",
@@ -279,6 +333,16 @@
           "path": "data-table/data-table.md",
           "type": "registry:file",
           "target": "~/components/data-table/data-table.md"
+        },
+        {
+          "path": "auth-pages/settings.tsx",
+          "type": "registry:file",
+          "target": "~/app/settings/page.tsx"
+        },
+        {
+          "path": "auth-pages/users.tsx",
+          "type": "registry:file",
+          "target": "~/app/users/page.tsx"
         }
       ]
     }
