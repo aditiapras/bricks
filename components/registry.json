@@ -41,6 +41,11 @@
           "path": "sidebar/sidebar-config.ts",
           "type": "registry:file",
           "target": "~/components/sidebar/sidebar-config.ts"
+        },
+        {
+          "path": "layout.tsx",
+          "type": "registry:file",
+          "target": "~/app/dashboard/layout.tsx"
         }
       ]
     },
@@ -94,7 +99,7 @@
         {
           "path": "layout.tsx",
           "type": "registry:file",
-          "target": "~/components/layout.tsx"
+          "target": "~/app/dashboard/layout.tsx"
         }
       ]
     },
@@ -148,6 +153,11 @@
           "path": "breadcrumb/index.ts",
           "type": "registry:file",
           "target": "~/components/breadcrumb/index.ts"
+        },
+        {
+          "path": "layout.tsx",
+          "type": "registry:file",
+          "target": "~/app/dashboard/layout.tsx"
         }
       ]
     },
@@ -160,7 +170,7 @@
         {
           "path": "layout.tsx",
           "type": "registry:file",
-          "target": "~/components/layout.tsx"
+          "target": "~/app/dashboard/layout.tsx"
         },
         {
           "path": "sidebar/app-sidebar.tsx",
@@ -210,12 +220,12 @@
         {
           "path": "auth-pages/settings.tsx",
           "type": "registry:file",
-          "target": "~/app/settings/page.tsx"
+          "target": "~/app/dashboard/settings/page.tsx"
         },
         {
           "path": "auth-pages/users.tsx",
           "type": "registry:file",
-          "target": "~/app/users/page.tsx"
+          "target": "~/app/dashboard/users/page.tsx"
         }
       ]
     },
@@ -228,7 +238,7 @@
         {
           "path": "auth-pages/settings.tsx",
           "type": "registry:file",
-          "target": "~/app/settings/page.tsx"
+          "target": "~/app/dashboard/settings/page.tsx"
         }
       ]
     },
@@ -241,7 +251,7 @@
         {
           "path": "auth-pages/users.tsx",
           "type": "registry:file",
-          "target": "~/app/users/page.tsx"
+          "target": "~/app/dashboard/users/page.tsx"
         }
       ]
     },
@@ -254,12 +264,12 @@
         {
           "path": "auth-pages/settings.tsx",
           "type": "registry:file",
-          "target": "~/app/settings/page.tsx"
+          "target": "~/app/dashboard/settings/page.tsx"
         },
         {
           "path": "auth-pages/users.tsx",
           "type": "registry:file",
-          "target": "~/app/users/page.tsx"
+          "target": "~/app/dashboard/users/page.tsx"
         }
       ]
     },
@@ -272,7 +282,7 @@
         {
           "path": "layout.tsx",
           "type": "registry:file",
-          "target": "~/components/layout.tsx"
+          "target": "~/app/dashboard/layout.tsx"
         },
         {
           "path": "sidebar/app-sidebar.tsx",
@@ -337,12 +347,12 @@
         {
           "path": "auth-pages/settings.tsx",
           "type": "registry:file",
-          "target": "~/app/settings/page.tsx"
+          "target": "~/app/dashboard/settings/page.tsx"
         },
         {
           "path": "auth-pages/users.tsx",
           "type": "registry:file",
-          "target": "~/app/users/page.tsx"
+          "target": "~/app/dashboard/users/page.tsx"
         }
       ]
     }
