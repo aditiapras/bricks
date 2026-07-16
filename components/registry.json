@@ -220,12 +220,12 @@
         {
           "path": "auth-pages/settings.tsx",
           "type": "registry:file",
-          "target": "~/app/dashboard/settings/page.tsx"
+          "target": "~/app/settings/page.tsx"
         },
         {
           "path": "auth-pages/users.tsx",
           "type": "registry:file",
-          "target": "~/app/dashboard/users/page.tsx"
+          "target": "~/app/users/page.tsx"
         }
       ]
     },
@@ -238,7 +238,7 @@
         {
           "path": "auth-pages/settings.tsx",
           "type": "registry:file",
-          "target": "~/app/dashboard/settings/page.tsx"
+          "target": "~/app/settings/page.tsx"
         }
       ]
     },
@@ -251,7 +251,7 @@
         {
           "path": "auth-pages/users.tsx",
           "type": "registry:file",
-          "target": "~/app/dashboard/users/page.tsx"
+          "target": "~/app/users/page.tsx"
         }
       ]
     },
@@ -264,12 +264,12 @@
         {
           "path": "auth-pages/settings.tsx",
           "type": "registry:file",
-          "target": "~/app/dashboard/settings/page.tsx"
+          "target": "~/app/settings/page.tsx"
         },
         {
           "path": "auth-pages/users.tsx",
           "type": "registry:file",
-          "target": "~/app/dashboard/users/page.tsx"
+          "target": "~/app/users/page.tsx"
         }
       ]
     },
@@ -347,12 +347,12 @@
         {
           "path": "auth-pages/settings.tsx",
           "type": "registry:file",
-          "target": "~/app/dashboard/settings/page.tsx"
+          "target": "~/app/settings/page.tsx"
         },
         {
           "path": "auth-pages/users.tsx",
           "type": "registry:file",
-          "target": "~/app/dashboard/users/page.tsx"
+          "target": "~/app/users/page.tsx"
         }
       ]
     }
