@@ -230,17 +230,17 @@
         {
           "path": "auth-routes/sign-in.tsx",
           "type": "registry:file",
-          "target": "~/app/(auth)/sign-in/page.tsx"
+          "target": "~/app/sign-in/page.tsx"
         },
         {
           "path": "auth-routes/sign-up.tsx",
           "type": "registry:file",
-          "target": "~/app/(auth)/sign-up/page.tsx"
+          "target": "~/app/sign-up/page.tsx"
         },
         {
           "path": "auth-routes/onboarding.tsx",
           "type": "registry:file",
-          "target": "~/app/(auth)/onboarding/page.tsx"
+          "target": "~/app/onboarding/page.tsx"
         }
       ]
     },
@@ -297,7 +297,7 @@
         {
           "path": "auth-routes/sign-in.tsx",
           "type": "registry:file",
-          "target": "~/app/(auth)/sign-in/page.tsx"
+          "target": "~/app/sign-in/page.tsx"
         }
       ]
     },
@@ -310,7 +310,7 @@
         {
           "path": "auth-routes/sign-up.tsx",
           "type": "registry:file",
-          "target": "~/app/(auth)/sign-up/page.tsx"
+          "target": "~/app/sign-up/page.tsx"
         }
       ]
     },
@@ -323,7 +323,7 @@
         {
           "path": "auth-routes/onboarding.tsx",
           "type": "registry:file",
-          "target": "~/app/(auth)/onboarding/page.tsx"
+          "target": "~/app/onboarding/page.tsx"
         }
       ]
     },
@@ -336,17 +336,17 @@
         {
           "path": "auth-routes/sign-in.tsx",
           "type": "registry:file",
-          "target": "~/app/(auth)/sign-in/page.tsx"
+          "target": "~/app/sign-in/page.tsx"
         },
         {
           "path": "auth-routes/sign-up.tsx",
           "type": "registry:file",
-          "target": "~/app/(auth)/sign-up/page.tsx"
+          "target": "~/app/sign-up/page.tsx"
         },
         {
           "path": "auth-routes/onboarding.tsx",
           "type": "registry:file",
-          "target": "~/app/(auth)/onboarding/page.tsx"
+          "target": "~/app/onboarding/page.tsx"
         }
       ]
     },
@@ -434,17 +434,17 @@
         {
           "path": "auth-routes/sign-in.tsx",
           "type": "registry:file",
-          "target": "~/app/(auth)/sign-in/page.tsx"
+          "target": "~/app/sign-in/page.tsx"
         },
         {
           "path": "auth-routes/sign-up.tsx",
           "type": "registry:file",
-          "target": "~/app/(auth)/sign-up/page.tsx"
+          "target": "~/app/sign-up/page.tsx"
         },
         {
           "path": "auth-routes/onboarding.tsx",
           "type": "registry:file",
-          "target": "~/app/(auth)/onboarding/page.tsx"
+          "target": "~/app/onboarding/page.tsx"
         }
       ]
     }

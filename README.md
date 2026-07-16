@@ -1,240 +1,201 @@
 # Bricks
 
-Collection of reusable development resources including Devin skills and shadcn/ui components for Next.js projects.
+Collection of reusable development resources for Next.js projects.
 
-## Overview
+## Quick Start
 
-Bricks provides two main types of reusable resources:
+```bash
+# List all available components
+bunx shadcn@latest list aditiapras/bricks
 
-1. **Devin Skills** - Automated setup scripts for common development tasks
-2. **Shadcn Components** - Reusable React components accessible via shadcn CLI
+# Install individual component
+bunx shadcn@latest add aditiapras/bricks/sidebar
+
+# Install complete UI kit
+bunx shadcn@latest add aditiapras/bricks/ui-kit
+```
+
+## Available Components
+
+### Core Components
+- **sidebar** - Advanced sidebar with role-based navigation
+- **breadcrumb** - Dynamic breadcrumb component  
+- **data-table** - Feature-rich data table with search/filter
+- **layout** - Complete application layout
+
+### Auth Pages
+- **settings-page** - Account settings with profile management
+- **users-page** - User management with data table
+
+### Auth Routes
+- **sign-in-page** - Sign in page with form validation
+- **sign-up-page** - Sign up page with registration form
+- **onboarding-page** - Password setup for new users
+
+### Bundles
+- **navigation-kit** - Sidebar + breadcrumb
+- **layout-template** - Layout + auth pages + auth routes
+- **auth-pages** - Settings + users pages
+- **auth-routes** - Sign-in + sign-up + onboarding
+- **ui-kit** - All components combined
+
+## How to Use
+
+### Install Individual Components
+
+```bash
+# Install sidebar only
+bunx shadcn@latest add aditiapras/bricks/sidebar
+
+# Install breadcrumb only
+bunx shadcn@latest add aditiapras/bricks/breadcrumb
+
+# Install data-table only
+bunx shadcn@latest add aditiapras/bricks/data-table
+
+# Install layout only
+bunx shadcn@latest add aditiapras/bricks/layout
+```
+
+### Install Auth Pages
+
+```bash
+# Install settings page
+bunx shadcn@latest add aditiapras/bricks/settings-page
+
+# Install users page
+bunx shadcn@latest add aditiapras/bricks/users-page
+
+# Install both auth pages
+bunx shadcn@latest add aditiapras/bricks/auth-pages
+```
+
+### Install Auth Routes
+
+```bash
+# Install sign-in page
+bunx shadcn@latest add aditiapras/bricks/sign-in-page
+
+# Install sign-up page
+bunx shadcn@latest add aditiapras/bricks/sign-up-page
+
+# Install onboarding page
+bunx shadcn@latest add aditiapras/bricks/onboarding-page
+
+# Install all auth routes
+bunx shadcn@latest add aditiapras/bricks/auth-routes
+```
+
+### Install Bundles
+
+```bash
+# Navigation kit (sidebar + breadcrumb)
+bunx shadcn@latest add aditiapras/bricks/navigation-kit
+
+# Layout template (layout + auth pages + auth routes)
+bunx shadcn@latest add aditiapras/bricks/layout-template
+
+# Complete UI kit (all components)
+bunx shadcn@latest add aditiapras/bricks/ui-kit
+```
+
+### Import Components
+
+After installation, import components in your files:
+
+```tsx
+// Import sidebar components
+import { AppSidebar } from "@/components/sidebar/app-sidebar"
+import { DynamicBreadcrumb } from "@/components/breadcrumb/dynamic-breadcrumb"
+
+// Import data table
+import { DataTable } from "@/components/data-table/data-table"
+
+// Import layout
+import MainLayout from "@/components/layout"
+
+// Import auth pages
+import SettingsPage from "@/app/settings/page"
+import UsersPage from "@/app/users/page"
+
+// Import auth routes
+import SignInPage from "@/app/sign-in/page"
+import SignUpPage from "@/app/sign-up/page"
+import OnboardingPage from "@/app/onboarding/page"
+```
+
+### Example Usage
+
+```tsx
+// Using layout with sidebar
+import MainLayout from "@/components/layout"
+
+export default function Dashboard() {
+  return (
+    <MainLayout
+      user={{ name: "John", email: "john@example.com" }}
+      menuItems={menuItems}
+      teamName="My App"
+    >
+      <div>Your dashboard content</div>
+    </MainLayout>
+  )
+}
+
+// Using data table
+import { DataTable } from "@/components/data-table/data-table"
+
+export default function Users() {
+  return (
+    <DataTable
+      columns={columns}
+      data={users}
+      searchPlaceholder="Search users..."
+      enableGlobalSearch={true}
+    />
+  )
+}
+
+// Using auth pages with props
+import SettingsPage from "@/app/settings/page"
+
+export default function Settings() {
+  return (
+    <SettingsPage
+      user={{ name: "John", email: "john@example.com" }}
+      onUpdateName={handleUpdateName}
+      onChangePassword={handleChangePassword}
+    />
+  )
+}
+```
+
+## Requirements
+
+- Next.js project with shadcn/ui initialized
+- Install required shadcn components first
+- For data-table: `bun add @tanstack/react-table moment-timezone`
+- For auth routes: `bunx shadcn@latest add field input-group`
 
 ## Structure
 
 ```
 bricks/
-├── skills/               # Devin skills for automation
-│   └── auth-skills/     # Better Auth + Convex related skills
-│       ├── setup-auth-convex
-│       ├── setup-base-path
-│       ├── setup-auth-routes
-│       └── setup-auth-functions
-├── components/          # Reusable shadcn/ui components
-│   ├── sidebar/         # Advanced sidebar with role-based navigation
-│   ├── breadcrumb/      # Dynamic breadcrumb component
-│   ├── data-table/      # Feature-rich data table
-│   ├── auth-pages/      # Settings and users management pages
-│   ├── auth-routes/     # Sign-in, sign-up, onboarding pages
-│   └── layout.tsx       # Complete application layout
-└── registry.json        # Shadcn registry configuration
+├── components/          # Shadcn components
+│   ├── sidebar/
+│   ├── breadcrumb/
+│   ├── data-table/
+│   ├── auth-pages/
+│   ├── auth-routes/
+│   └── layout.tsx
+├── skills/              # Devin skills
+│   └── auth-skills/
+└── registry.json        # Shadcn registry
 ```
-
-## Shadcn Components
-
-Reusable React components accessible via shadcn CLI. These components are designed to be generic and customizable for various Next.js projects.
-
-### Available Components
-
-#### Sidebar
-A comprehensive sidebar component with role-based menu filtering, team switcher, and user management. Features collapsible navigation, custom menu items, and user profile dropdown.
-
-**Install:**
-```bash
-bunx shadcn@latest add aditiapras/bricks/sidebar
-```
-
-#### Breadcrumb
-A dynamic breadcrumb component that automatically generates navigation breadcrumbs based on the current URL. Supports custom route name mapping and mobile-responsive display.
-
-**Install:**
-```bash
-bunx shadcn@latest add aditiapras/bricks/breadcrumb
-```
-
-#### Data Table
-A feature-rich data table component with global search, column filtering, sorting, pagination, row selection, and column visibility controls. Built with TanStack Table.
-
-**Install:**
-```bash
-bunx shadcn@latest add aditiapras/bricks/data-table
-```
-
-#### Layout
-A complete application layout that combines sidebar, breadcrumb, and header into a cohesive structure. Perfect for admin dashboards and content management systems.
-
-**Install:**
-```bash
-bunx shadcn@latest add aditiapras/bricks/layout
-```
-
-### Requirements
-
-- Next.js project with shadcn/ui initialized
-- Basic shadcn/ui components (Button, Separator, Sidebar, etc.) must be installed first
-- For sidebar: Install shadcn sidebar components via `bunx shadcn@latest add sidebar`
-- For data-table: Install TanStack Table: `bun add @tanstack/react-table`
-- For auth routes: Install field and input-group components via `bunx shadcn@latest add field input-group`
-
-### Notes
-
-- All components are designed to be generic and customizable
-- Auth-related components (UserButton, etc.) include commented sections for Better Auth integration
-- Role-based permissions in sidebar are commented out by default - uncomment and customize as needed
-- Components use relative imports within the components folder for easy installation
-
-### Bundle Packages
-
-#### Navigation Kit
-Bundle of sidebar and breadcrumb components for complete navigation solution.
-
-**Install:**
-```bash
-bunx shadcn@latest add aditiapras/bricks/navigation-kit
-```
-
-#### Layout Template
-Complete layout template with sidebar, breadcrumb, and header components. Perfect starting point for admin dashboards.
-
-**Install:**
-```bash
-bunx shadcn@latest add aditiapras/bricks/layout-template
-```
-
-#### UI Kit
-Complete UI kit bundle with all components: sidebar, breadcrumb, data-table, and layout template.
-
-**Install:**
-```bash
-bunx shadcn@latest add aditiapras/bricks/ui-kit
-```
-
-### List All Components
-```bash
-bunx shadcn@latest list aditiapras/bricks
-```
-
-## Auth Routes
-
-Authentication route pages for sign-in, sign-up, and onboarding flows. These pages are designed to work with Better Auth but can be customized for any auth system.
-
-### Available Auth Routes
-
-#### Sign In Page
-A complete sign-in page with username/password authentication, form validation, password visibility toggle, and loading states. Features customizable branding and validation rules.
-
-**Install:**
-```bash
-bunx shadcn@latest add aditiapras/bricks/sign-in-page
-```
-
-#### Sign Up Page
-A complete sign-up page with name, username, email, password, and confirm password fields. Features form validation, password visibility toggles, and customizable branding.
-
-**Install:**
-```bash
-bunx shadcn@latest add aditiapras/bricks/sign-up-page
-```
-
-#### Onboarding Page
-A password setup page for new user onboarding. Features strong password validation, password visibility toggles, and customizable validation rules.
-
-**Install:**
-```bash
-bunx shadcn@latest add aditiapras/bricks/onboarding-page
-```
-
-### Auth Routes Bundle
-
-Complete authentication route bundle including sign-in, sign-up, and onboarding pages. Perfect for setting up authentication flow in your application.
-
-**Install:**
-```bash
-bunx shadcn@latest add aditiapras/bricks/auth-routes
-```
-
-### List All Components
-```bash
-bunx shadcn@latest list aditiapras/bricks
-```
-
-## Devin Skills
-
-Skills for setting up Better Auth with Convex integration in Next.js projects:
-
-### setup-auth-convex
-Complete Better Auth + Convex integration setup including:
-- Plugins: username, admin, organization
-- Permission system with role-based access control
-- Route groups: (auth) and (main)
-- Middleware for auth protection
-
-**Install:**
-```bash
-bunx skills add aditiapras/bricks@auth-skills/setup-auth-convex
-```
-
-### setup-base-path
-Next.js base path configuration for subpath deployments:
-- Updates next.config.js with basePath
-- Configures auth client with base path
-- Updates middleware redirects
-
-**Install:**
-```bash
-bunx skills add aditiapras/bricks@auth-skills/setup-base-path
-```
-
-### setup-auth-routes
-Auth UI pages with form validation:
-- Sign-in page with username/password
-- Sign-up page with name, username, email, password
-- Onboarding page for password change
-- Uses shadcn/ui components
-
-**Install:**
-```bash
-bunx skills add aditiapras/bricks@auth-skills/setup-auth-routes
-```
-
-### setup-auth-functions
-Patterns for using Better Auth in Convex functions and React components:
-- Server pattern: authComponent.getAuth, headers, role checking
-- Client pattern: useQuery, useMutation, authClient
-- Examples: listOrgs, listUsers, createOrg, updateUser
-
-**Install:**
-```bash
-bunx skills add aditiapras/bricks@auth-skills/setup-auth-functions
-```
-
-## Usage Order
-
-### For Shadcn Components:
-
-1. Initialize shadcn/ui in your project: `bunx shadcn@latest init`
-2. Install individual components or bundles as needed
-3. Customize components via props (all components are props-based and generic)
-
-### For Better Auth + Convex Setup:
-
-1. Run `setup-auth-convex` first
-2. Run `setup-auth-routes` for UI pages
-3. Run `setup-base-path` if using subpath deployment
-4. Reference `setup-auth-functions` when creating auth functions
 
 ## Contributing
 
-### Adding New Skills:
-1. Create a new directory in the appropriate skill group under `skills/`
-2. Add a `SKILL.md` file following the skill format
-3. Update this README with the new skill
-
-### Adding New Components:
-1. Create component files in the appropriate folder under `components/`
-2. Make components props-based and generic for reusability
-3. Add the component to `components/registry.json`
-4. Validate the registry: `bunx shadcn@latest registry validate aditiapras/bricks`
-5. Update this README with the new component
+Add new components to `components/` and update `components/registry.json`.
 
 ## License
 
