@@ -165,7 +165,7 @@
       "name": "layout-template",
       "type": "registry:item",
       "title": "Layout Template",
-      "description": "Complete layout template with sidebar, breadcrumb, header components, and auth pages. Perfect starting point for admin dashboards and SaaS applications.",
+      "description": "Complete layout template with sidebar, breadcrumb, header components, auth pages, and auth routes. Perfect starting point for admin dashboards and SaaS applications.",
       "files": [
         {
           "path": "layout.tsx",
@@ -226,6 +226,21 @@
           "path": "auth-pages/users.tsx",
           "type": "registry:file",
           "target": "~/app/users/page.tsx"
+        },
+        {
+          "path": "auth-routes/sign-in.tsx",
+          "type": "registry:file",
+          "target": "~/app/(auth)/sign-in/page.tsx"
+        },
+        {
+          "path": "auth-routes/sign-up.tsx",
+          "type": "registry:file",
+          "target": "~/app/(auth)/sign-up/page.tsx"
+        },
+        {
+          "path": "auth-routes/onboarding.tsx",
+          "type": "registry:file",
+          "target": "~/app/(auth)/onboarding/page.tsx"
         }
       ]
     },
@@ -274,10 +289,72 @@
       ]
     },
     {
+      "name": "sign-in-page",
+      "type": "registry:item",
+      "title": "Sign In Page",
+      "description": "A complete sign-in page with username/password authentication, form validation, password visibility toggle, and loading states. Features customizable branding and validation rules.",
+      "files": [
+        {
+          "path": "auth-routes/sign-in.tsx",
+          "type": "registry:file",
+          "target": "~/app/(auth)/sign-in/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sign-up-page",
+      "type": "registry:item",
+      "title": "Sign Up Page",
+      "description": "A complete sign-up page with name, username, email, password, and confirm password fields. Features form validation, password visibility toggles, and customizable branding.",
+      "files": [
+        {
+          "path": "auth-routes/sign-up.tsx",
+          "type": "registry:file",
+          "target": "~/app/(auth)/sign-up/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "onboarding-page",
+      "type": "registry:item",
+      "title": "Onboarding Page",
+      "description": "A password setup page for new user onboarding. Features strong password validation, password visibility toggles, and customizable validation rules.",
+      "files": [
+        {
+          "path": "auth-routes/onboarding.tsx",
+          "type": "registry:file",
+          "target": "~/app/(auth)/onboarding/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-routes",
+      "type": "registry:item",
+      "title": "Auth Routes Bundle",
+      "description": "Complete authentication route bundle including sign-in, sign-up, and onboarding pages. Perfect for setting up authentication flow in your application.",
+      "files": [
+        {
+          "path": "auth-routes/sign-in.tsx",
+          "type": "registry:file",
+          "target": "~/app/(auth)/sign-in/page.tsx"
+        },
+        {
+          "path": "auth-routes/sign-up.tsx",
+          "type": "registry:file",
+          "target": "~/app/(auth)/sign-up/page.tsx"
+        },
+        {
+          "path": "auth-routes/onboarding.tsx",
+          "type": "registry:file",
+          "target": "~/app/(auth)/onboarding/page.tsx"
+        }
+      ]
+    },
+    {
       "name": "ui-kit",
       "type": "registry:item",
       "title": "UI Kit Bundle",
-      "description": "Complete UI kit bundle with all components: sidebar, breadcrumb, data-table, layout template, and auth pages. Everything you need to build a modern admin dashboard.",
+      "description": "Complete UI kit bundle with all components: sidebar, breadcrumb, data-table, layout template, auth pages, and auth routes. Everything you need to build a modern admin dashboard with authentication.",
       "files": [
         {
           "path": "layout.tsx",
@@ -353,6 +430,21 @@
           "path": "auth-pages/users.tsx",
           "type": "registry:file",
           "target": "~/app/users/page.tsx"
+        },
+        {
+          "path": "auth-routes/sign-in.tsx",
+          "type": "registry:file",
+          "target": "~/app/(auth)/sign-in/page.tsx"
+        },
+        {
+          "path": "auth-routes/sign-up.tsx",
+          "type": "registry:file",
+          "target": "~/app/(auth)/sign-up/page.tsx"
+        },
+        {
+          "path": "auth-routes/onboarding.tsx",
+          "type": "registry:file",
+          "target": "~/app/(auth)/onboarding/page.tsx"
         }
       ]
     }
