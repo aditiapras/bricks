@@ -1,0 +1,286 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "sidebar",
+      "type": "registry:item",
+      "title": "Sidebar Component",
+      "description": "A comprehensive sidebar component with role-based menu filtering, team switcher, and user management. Features collapsible navigation, custom menu items, and user profile dropdown.",
+      "files": [
+        {
+          "path": "sidebar/app-sidebar.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/app-sidebar.tsx"
+        },
+        {
+          "path": "sidebar/nav-projects.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/nav-projects.tsx"
+        },
+        {
+          "path": "sidebar/nav-user.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/nav-user.tsx"
+        },
+        {
+          "path": "sidebar/nav-main.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/nav-main.tsx"
+        },
+        {
+          "path": "sidebar/team-switcher.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/team-switcher.tsx"
+        },
+        {
+          "path": "sidebar/user-button.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/user-button.tsx"
+        },
+        {
+          "path": "sidebar/sidebar-config.ts",
+          "type": "registry:file",
+          "target": "~/components/sidebar/sidebar-config.ts"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:item",
+      "title": "Dynamic Breadcrumb",
+      "description": "A dynamic breadcrumb component that automatically generates navigation breadcrumbs based on the current URL. Supports custom route name mapping and mobile-responsive display.",
+      "files": [
+        {
+          "path": "breadcrumb/dynamic-breadcrumb.tsx",
+          "type": "registry:file",
+          "target": "~/components/breadcrumb/dynamic-breadcrumb.tsx"
+        },
+        {
+          "path": "breadcrumb/index.ts",
+          "type": "registry:file",
+          "target": "~/components/breadcrumb/index.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-table",
+      "type": "registry:item",
+      "title": "Advanced Data Table",
+      "description": "A feature-rich data table component with global search, column filtering, sorting, pagination, row selection, and column visibility controls. Built with TanStack Table.",
+      "files": [
+        {
+          "path": "data-table/data-table.tsx",
+          "type": "registry:file",
+          "target": "~/components/data-table/data-table.tsx"
+        },
+        {
+          "path": "data-table/data-table-example.tsx",
+          "type": "registry:file",
+          "target": "~/components/data-table/data-table-example.tsx"
+        },
+        {
+          "path": "data-table/data-table.md",
+          "type": "registry:file",
+          "target": "~/components/data-table/data-table.md"
+        }
+      ]
+    },
+    {
+      "name": "layout",
+      "type": "registry:item",
+      "title": "Main Layout",
+      "description": "A complete application layout that combines sidebar, breadcrumb, and header into a cohesive structure. Perfect for admin dashboards and content management systems.",
+      "files": [
+        {
+          "path": "layout.tsx",
+          "type": "registry:file",
+          "target": "~/components/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navigation-kit",
+      "type": "registry:item",
+      "title": "Navigation Kit",
+      "description": "Bundle of sidebar and breadcrumb components for complete navigation solution. Includes all sidebar sub-components and dynamic breadcrumb.",
+      "files": [
+        {
+          "path": "sidebar/app-sidebar.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/app-sidebar.tsx"
+        },
+        {
+          "path": "sidebar/nav-projects.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/nav-projects.tsx"
+        },
+        {
+          "path": "sidebar/nav-user.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/nav-user.tsx"
+        },
+        {
+          "path": "sidebar/nav-main.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/nav-main.tsx"
+        },
+        {
+          "path": "sidebar/team-switcher.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/team-switcher.tsx"
+        },
+        {
+          "path": "sidebar/user-button.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/user-button.tsx"
+        },
+        {
+          "path": "sidebar/sidebar-config.ts",
+          "type": "registry:file",
+          "target": "~/components/sidebar/sidebar-config.ts"
+        },
+        {
+          "path": "breadcrumb/dynamic-breadcrumb.tsx",
+          "type": "registry:file",
+          "target": "~/components/breadcrumb/dynamic-breadcrumb.tsx"
+        },
+        {
+          "path": "breadcrumb/index.ts",
+          "type": "registry:file",
+          "target": "~/components/breadcrumb/index.ts"
+        }
+      ]
+    },
+    {
+      "name": "layout-template",
+      "type": "registry:item",
+      "title": "Layout Template",
+      "description": "Complete layout template with sidebar, breadcrumb, and header components. Perfect starting point for admin dashboards and SaaS applications.",
+      "files": [
+        {
+          "path": "layout.tsx",
+          "type": "registry:file",
+          "target": "~/components/layout.tsx"
+        },
+        {
+          "path": "sidebar/app-sidebar.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/app-sidebar.tsx"
+        },
+        {
+          "path": "sidebar/nav-projects.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/nav-projects.tsx"
+        },
+        {
+          "path": "sidebar/nav-user.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/nav-user.tsx"
+        },
+        {
+          "path": "sidebar/nav-main.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/nav-main.tsx"
+        },
+        {
+          "path": "sidebar/team-switcher.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/team-switcher.tsx"
+        },
+        {
+          "path": "sidebar/user-button.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/user-button.tsx"
+        },
+        {
+          "path": "sidebar/sidebar-config.ts",
+          "type": "registry:file",
+          "target": "~/components/sidebar/sidebar-config.ts"
+        },
+        {
+          "path": "breadcrumb/dynamic-breadcrumb.tsx",
+          "type": "registry:file",
+          "target": "~/components/breadcrumb/dynamic-breadcrumb.tsx"
+        },
+        {
+          "path": "breadcrumb/index.ts",
+          "type": "registry:file",
+          "target": "~/components/breadcrumb/index.ts"
+        }
+      ]
+    },
+    {
+      "name": "ui-kit",
+      "type": "registry:item",
+      "title": "UI Kit Bundle",
+      "description": "Complete UI kit bundle with all components: sidebar, breadcrumb, data-table, and layout template. Everything you need to build a modern admin dashboard.",
+      "files": [
+        {
+          "path": "layout.tsx",
+          "type": "registry:file",
+          "target": "~/components/layout.tsx"
+        },
+        {
+          "path": "sidebar/app-sidebar.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/app-sidebar.tsx"
+        },
+        {
+          "path": "sidebar/nav-projects.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/nav-projects.tsx"
+        },
+        {
+          "path": "sidebar/nav-user.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/nav-user.tsx"
+        },
+        {
+          "path": "sidebar/nav-main.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/nav-main.tsx"
+        },
+        {
+          "path": "sidebar/team-switcher.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/team-switcher.tsx"
+        },
+        {
+          "path": "sidebar/user-button.tsx",
+          "type": "registry:file",
+          "target": "~/components/sidebar/user-button.tsx"
+        },
+        {
+          "path": "sidebar/sidebar-config.ts",
+          "type": "registry:file",
+          "target": "~/components/sidebar/sidebar-config.ts"
+        },
+        {
+          "path": "breadcrumb/dynamic-breadcrumb.tsx",
+          "type": "registry:file",
+          "target": "~/components/breadcrumb/dynamic-breadcrumb.tsx"
+        },
+        {
+          "path": "breadcrumb/index.ts",
+          "type": "registry:file",
+          "target": "~/components/breadcrumb/index.ts"
+        },
+        {
+          "path": "data-table/data-table.tsx",
+          "type": "registry:file",
+          "target": "~/components/data-table/data-table.tsx"
+        },
+        {
+          "path": "data-table/data-table-example.tsx",
+          "type": "registry:file",
+          "target": "~/components/data-table/data-table-example.tsx"
+        },
+        {
+          "path": "data-table/data-table.md",
+          "type": "registry:file",
+          "target": "~/components/data-table/data-table.md"
+        }
+      ]
+    }
+  ]
+}

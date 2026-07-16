@@ -1,0 +1,8 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "bricks",
+  "homepage": "https://github.com/aditiapras/bricks",
+  "include": [
+    "components/registry.json"
+  ]
+}
