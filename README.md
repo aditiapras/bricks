@@ -23,6 +23,8 @@ bricks/
 │   ├── sidebar/         # Advanced sidebar with role-based navigation
 │   ├── breadcrumb/      # Dynamic breadcrumb component
 │   ├── data-table/      # Feature-rich data table
+│   ├── auth-pages/      # Settings and users management pages
+│   ├── auth-routes/     # Sign-in, sign-up, onboarding pages
 │   └── layout.tsx       # Complete application layout
 └── registry.json        # Shadcn registry configuration
 ```
@@ -71,6 +73,7 @@ bunx shadcn@latest add aditiapras/bricks/layout
 - Basic shadcn/ui components (Button, Separator, Sidebar, etc.) must be installed first
 - For sidebar: Install shadcn sidebar components via `bunx shadcn@latest add sidebar`
 - For data-table: Install TanStack Table: `bun add @tanstack/react-table`
+- For auth routes: Install field and input-group components via `bunx shadcn@latest add field input-group`
 
 ### Notes
 
@@ -103,6 +106,50 @@ Complete UI kit bundle with all components: sidebar, breadcrumb, data-table, and
 **Install:**
 ```bash
 bunx shadcn@latest add aditiapras/bricks/ui-kit
+```
+
+### List All Components
+```bash
+bunx shadcn@latest list aditiapras/bricks
+```
+
+## Auth Routes
+
+Authentication route pages for sign-in, sign-up, and onboarding flows. These pages are designed to work with Better Auth but can be customized for any auth system.
+
+### Available Auth Routes
+
+#### Sign In Page
+A complete sign-in page with username/password authentication, form validation, password visibility toggle, and loading states. Features customizable branding and validation rules.
+
+**Install:**
+```bash
+bunx shadcn@latest add aditiapras/bricks/sign-in-page
+```
+
+#### Sign Up Page
+A complete sign-up page with name, username, email, password, and confirm password fields. Features form validation, password visibility toggles, and customizable branding.
+
+**Install:**
+```bash
+bunx shadcn@latest add aditiapras/bricks/sign-up-page
+```
+
+#### Onboarding Page
+A password setup page for new user onboarding. Features strong password validation, password visibility toggles, and customizable validation rules.
+
+**Install:**
+```bash
+bunx shadcn@latest add aditiapras/bricks/onboarding-page
+```
+
+### Auth Routes Bundle
+
+Complete authentication route bundle including sign-in, sign-up, and onboarding pages. Perfect for setting up authentication flow in your application.
+
+**Install:**
+```bash
+bunx shadcn@latest add aditiapras/bricks/auth-routes
 ```
 
 ### List All Components
